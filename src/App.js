@@ -5,7 +5,17 @@ import './header.css'
 import './menu.css'
 import './cart.css'
 
-export const App = () => {
+const App = () => {
+	return (
+		<div className="App">
+		<Header/>
+		<Main/>
+		<Footer/>
+		</div>
+		
+	)
+}
+const Header = () => {
 	return (
 		<div className="App">
 			<header className="header">
@@ -35,7 +45,13 @@ export const App = () => {
 			</div>
 		</div>
 	</header>
-	<main className="main">
+		</div>
+	)
+}
+
+const Main = () => {
+	return (
+		<main className="main">
 		<div className="container">
 			<div className="row">
 				<div className="col-lg-3">
@@ -47,12 +63,13 @@ export const App = () => {
 			</div>
 		</div>
 	</main>
-	<footer className="footer">
-		
-	</footer>
-
-		</div>
 	)
 }
-
+const Footer = () => {
+	return (
+		<footer className="footer">
+		
+		</footer>		
+	)
+}
 export default App
