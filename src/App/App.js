@@ -1,10 +1,9 @@
 import React from 'react'
-import  Header from './Header/Header'
-import './reset.css'
-import './base.css'
 
-import './menu.css'
-import './cart.css'
+import  Header from './Header/Header'
+import '../common/style/reset.css'
+import '../common/style/base.css'
+
 
 const App = () => {
 	return (
