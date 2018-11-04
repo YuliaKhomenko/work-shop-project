@@ -28,21 +28,20 @@ const ProductsList = () => {
                     </div>
                     <div className="col-lg-6">
                         <ProductsListItem
-                          name="iPhone X"
-                          description="This is iPhone X"
-                          type="phone"
-                          capacity={256}
-                          price={999}
+                            name="iPhone X"
+                            description="This is iPhone X"
+                            type="phone"
+                            capacity={256}
+                            price={999}
                         />
                     </div>
                     <div className="col-lg-6">
-                    <ProductsListItem
-                        name="iPhone XS"
+                        <ProductsListItem
+                            name="iPhone XS"
                             description="This is iPhone XS"
                             type="phone"
                             capacity={128}
                             price={1199}
-                        
                         />
                     </div>
                 </div>
