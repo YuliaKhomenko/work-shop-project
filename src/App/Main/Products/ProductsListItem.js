@@ -13,8 +13,8 @@ const ProductsListItem = ({
         <div className="products-list-item">
             <div className="product-name">{name}</div>
             <div className="product-description">{description}</div>
-            <div className="product-type">{type}</div>
-            <div className="product-capacity">{capacity} Gb</div>
+            <div className="product-type">Type: {type}</div>
+            <div className="product-capacity">Capacity: {capacity} Gb</div>
             <div className="product-quantity">
                 <button>-</button>
                 <input type="text"/>
