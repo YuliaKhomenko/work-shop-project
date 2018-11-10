@@ -1,8 +1,10 @@
 import React from 'react'
 
 import ProductsListItem from './ProductsListItem'
+import products from ./products
 
 import './ProductsList.css'
+
 const ProductsList = () => {
     return (
         <div className="products-list">
