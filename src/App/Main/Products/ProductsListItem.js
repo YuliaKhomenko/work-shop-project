@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 import './ProductsListItem.css'
 
 const ProductsListItem = ({
@@ -24,6 +24,11 @@ const ProductsListItem = ({
             <button className="btn-add-to-cart">Add to cart</button>
         </div>
     )
+}
+
+ProductsListItem.propTypes = {
+    name: PropTypes.string,
+    price: PropTypes.number,
 }
 
 export default ProductsListItem
