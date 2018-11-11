@@ -12,9 +12,9 @@ class ProductsListItem extends Component {
         price: PropTypes.number.isRequired,
     }
 
-    static defaultProps = {
-        description:"No description"
-    }
+   // static defaultProps = {
+   //     description:"No description"
+   // }
 
 
     render () {
@@ -22,7 +22,7 @@ class ProductsListItem extends Component {
         const {
             name,
             type,
-            description,
+            description = "No description...",
             price,
             capacity,
             image,
