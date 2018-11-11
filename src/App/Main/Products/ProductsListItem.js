@@ -3,6 +3,20 @@ import PropTypes from 'prop-types'
 import './ProductsListItem.css'
 
 class ProductsListItem extends Component {
+
+    static propTypes = {
+        name: PropTypes.string.isRequired,
+        description: PropTypes.string,
+        type: PropTypes.string,
+        capacity: PropTypes.number,
+        price: PropTypes.number.isRequired,
+    }
+
+    static defaultProps = {
+        description:"No description"
+    }
+
+
     render () {
 
         const {
@@ -35,17 +49,6 @@ class ProductsListItem extends Component {
     }
 }
 
-
-
-
-
-//ProductsListItem.propTypes = {
-  //  name: PropTypes.string.isRequired,
-    //description: PropTypes.string,
-    //type: PropTypes.string,
-    //capacity: PropTypes.number,
-    //price: PropTypes.number.isRequired,
-//}
 
 
 export default ProductsListItem
