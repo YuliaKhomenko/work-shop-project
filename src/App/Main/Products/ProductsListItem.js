@@ -28,6 +28,9 @@ const ProductsListItem = ({
 
 ProductsListItem.propTypes = {
     name: PropTypes.string,
+    description: PropTypes.string,
+    type: PropTypes.string,
+    capacity: PropTypes.number,
     price: PropTypes.number,
 }
 
