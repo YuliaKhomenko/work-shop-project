@@ -13,6 +13,7 @@ const ProductsList = () => {
                     {
                         products.map(({
                             id,
+                            image,
                             name,
                             type,
                             description,
@@ -21,6 +22,7 @@ const ProductsList = () => {
                         })=>(
                             <div className="col-lg-6" key={id}>
                                 <ProductsListItem
+                                    image={image}
                                     name={name}
                                     type={type}
                                     description={description}

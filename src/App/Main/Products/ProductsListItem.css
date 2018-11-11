@@ -46,3 +46,9 @@
     text-align: center;
     margin: 10px 0;
 }
+.product-image {
+    text-align: center;
+    background-color: white;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}

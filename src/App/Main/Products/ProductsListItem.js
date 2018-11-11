@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import './ProductsListItem.css'
 
 const ProductsListItem = ({
+    image,
     name,
     description = "no decription...",
     type,
@@ -11,6 +12,9 @@ const ProductsListItem = ({
 }) => {
     return (
         <div className="products-list-item">
+            <div className="product-image">
+                <img src={image} alt={name}/>
+            </div>
             <div className="product-name">{name}</div>
             <div className="product-description">{description}</div>
             <div className="product-type">Type: {type}</div>
