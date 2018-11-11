@@ -34,9 +34,5 @@ ProductsListItem.propTypes = {
     price: PropTypes.number.isRequired,
 }
 
-ProductsListItem.defaultProps = {
-    description: "no desc..."
-}
-
 
 export default ProductsListItem
