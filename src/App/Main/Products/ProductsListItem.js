@@ -16,6 +16,9 @@ class ProductsListItem extends Component {
    //     description:"No description"
    // }
 
+    state = {
+        productsCount: 1,
+    }
 
     render () {
 
@@ -39,7 +42,7 @@ class ProductsListItem extends Component {
                 <div className="product-capacity">Capacity: {capacity} Gb</div>
                 <div className="product-quantity">
                     <button>-</button>
-                    <input type="text" value={1} readOnly/>
+                    <input type="text" value={this.state.productsCount} readOnly/>
                     <button>+</button>
                 </div>
                 <div className="product-price">$ {price}</div>
