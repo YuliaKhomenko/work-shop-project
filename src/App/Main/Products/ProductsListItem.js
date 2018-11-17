@@ -53,9 +53,15 @@ class ProductsListItem extends Component {
                 <div className="product-type">Type: {type}</div>
                 <div className="product-capacity">Capacity: {capacity} Gb</div>
                 <div className="product-quantity">
-                    <button onClick={()=>this.onDecrementClick()}>-</button>
+                    <button 
+                        onClick={()=>this.onDecrementClick()}
+                        disabled={this.state.productsCount <= 1} 
+                    >-</button>
                     <input type="text" value={this.state.productsCount} readOnly/>
-                    <button onClick={()=>this.onIncrementClick()}>+</button>
+                    <button 
+                        onClick={()=>this.onIncrementClick()}
+                        disabled={this.state.productsCount >= 10}
+                    >+</button>
                 </div>
                 <div className="product-price">$ {price}</div>
                 <button className="btn-add-to-cart">Add to cart</button>
