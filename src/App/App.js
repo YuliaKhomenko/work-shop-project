@@ -8,6 +8,14 @@ import '../common/style/base.css'
 
 
 class App extends Component {
+
+	state = {
+		cartData : {
+			productsCount: 0,
+			total: 0,
+		}
+	}
+
 	render () {
 		return (
 			<div className="App">
