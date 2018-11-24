@@ -5,7 +5,9 @@ import products from './products'
 
 import './ProductsList.css'
 
-const ProductsList = () => {
+const ProductsList = ({
+    addProductToCart,
+}) => {
     return (
         <div className="products-list">
             <h2>Products List</h2>
@@ -28,6 +30,7 @@ const ProductsList = () => {
                                     description={description}
                                     capacity={capacity}
                                     price={price}
+                                    addProductToCart={addProductToCart}
                                 />
                             </div>
                         ))  
