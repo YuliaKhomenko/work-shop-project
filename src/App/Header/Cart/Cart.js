@@ -8,7 +8,7 @@ import './cart.css'
 		productsInCart,
 	}) => 
 	<div className="cart text-center">
-		{  /*['2', '3']*/
+		{  /*['2','3']*/
 			keys(productsInCart).map((productId)=>(
 				<div>
 					<span>{productId}</span>: {productsInCart[productId]}
