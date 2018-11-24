@@ -10,29 +10,29 @@ import '../common/style/base.css'
 class App extends Component {
 
 	state = {
-		cartData : {
-			totalProductsCount: 0,
-			totalPrice: 0,
+		productsInCart:{
+			'2': 5,
+			'3': 4,
 		}
 	}
 
 	addProductToCart = (price,count) => {
-		this.setState((prevState)=>({
-			cartData:{
-				totalPrice:prevState.cartData.totalPrice + (price * count),
-				totalProductsCount: prevState.cartData.totalProductsCount + count 
-			}
-		}))
+//		this.setState((prevState)=>({
+//			cartData:{
+//				totalPrice:prevState.cartData.totalPrice + (price * count),
+//				totalProductsCount: prevState.cartData.totalProductsCount + count 
+//			}
+//		}))
 	}
 
 	render () {
 		return (
 			<div className="App">
 				<Header
-					cartData={this.state.cartData}
+					productsInCart={this.state.productsInCart}
 				/>
 				<Main
-				addProductToCart={this.addProductToCart}
+					addProductToCart={this.addProductToCart}
 				/>
 				<Footer/>
 			</div>
