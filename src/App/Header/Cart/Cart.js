@@ -9,7 +9,6 @@ const productsMap = products.reduce((map,product)=>({
 	[product.id]:product,
 }),{})
 
-
 console.log(products)
 console.log(productsMap)
 
@@ -21,7 +20,7 @@ const Cart = ({
 	{  /*['2','3']*/
 		keys(productsInCart).map((productId)=>(
 			<div key={productId}>
-				<span>{productId}</span>: {productsInCart[productId]}
+				<span>{productsMap[productId].name}</span>: {productsInCart[productId]}
 			</div>
 		))
 	}
