@@ -11,14 +11,14 @@ class App extends Component {
 
 	state = {
 		productsInCart:{
-			'2': 5,
-			'3': 4,
+		
 		}
 	}
 
 	addProductToCart = (productId,count) => {
 		this.setState((prevState)=>({
 			productsInCart: {
+				...prevState.productsInCart,
 				[productId]: (prevState.productsInCart[productId] || 0) + count,
 			}
 		}))
