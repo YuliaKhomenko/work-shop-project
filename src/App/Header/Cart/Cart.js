@@ -9,10 +9,6 @@ const productsMap = products.reduce((map,product)=>({
 	[product.id]:product,
 }),{})
 
-console.log(products)
-console.log(productsMap)
-
-
 const Cart = ({
 	productsInCart,
 }) => 
@@ -24,6 +20,13 @@ const Cart = ({
 			</div>
 		))
 	}
+	<div>
+	Total: $ {
+		keys(productsInCart).reduce((total,product) => {
+			return total + (productsMap[product].price * productsInCart[product])
+		},0)
+	}
+	</div>
 </div>
 	
 export default Cart

@@ -11,7 +11,7 @@ class App extends Component {
 
 	state = {
 		productsInCart:{
-			'3': 5,
+			
 		}
 	}
 
