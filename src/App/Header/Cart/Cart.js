@@ -4,19 +4,27 @@ import products from './../../Main/Products/products'
 
 import './cart.css'
 
-	console.log(products)
+const productsMap = products.reduce((map,product)=>({
+	...map,
+	[product.id]:product,
+}),{})
 
-	const Cart = ({
-		productsInCart,
-	}) => 
-	<div className="cart text-center">
-		{  /*['2','3']*/
-			keys(productsInCart).map((productId)=>(
-				<div key={productId}>
-					<span>{productId}</span>: {productsInCart[productId]}
-				</div>
-			))
-		}
-	</div>
+
+console.log(products)
+console.log(productsMap)
+
+
+const Cart = ({
+	productsInCart,
+}) => 
+<div className="cart text-center">
+	{  /*['2','3']*/
+		keys(productsInCart).map((productId)=>(
+			<div key={productId}>
+				<span>{productId}</span>: {productsInCart[productId]}
+			</div>
+		))
+	}
+</div>
 	
 export default Cart
