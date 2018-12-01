@@ -17,12 +17,16 @@ const Main = ({
 					Filter...
 				</div>
 				<div className="col-lg-9">
+					<Route path="/" exact render={()=>{
+						return (<ProductsList
+							addProductToCart={addProductToCart}/>)
+					}}/>
 					<Route path="/cart" component={CartPage} />
 					<Route path="/payment" component={PaymentPage} />
 					<Route path="/shipping" component={ShippingPage} />
-					<ProductsList
+					{/*<ProductsList
 						addProductToCart={addProductToCart}
-					/>
+					/>*/}
 				</div>
 			</div>
 		</div>
