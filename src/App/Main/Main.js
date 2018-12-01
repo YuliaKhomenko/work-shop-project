@@ -21,12 +21,12 @@ const Main = ({
 						return (<ProductsList
 							addProductToCart={addProductToCart}/>)
 					}}/>
-					<Route path="/cart" component={CartPage} />
-					<Route path="/payment" component={PaymentPage} />
-					<Route path="/shipping" component={ShippingPage} />
-					{/*<ProductsList
+					<Route path="/cart" component={CartPage}/>
+					<Route path="/payment" component={PaymentPage}/>
+					<Route path="/shipping" component={ShippingPage}/>
+					{/* <ProductsList
 						addProductToCart={addProductToCart}
-					/>*/}
+					/> */}
 				</div>
 			</div>
 		</div>
