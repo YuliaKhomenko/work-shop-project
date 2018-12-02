@@ -4,7 +4,6 @@ import CartProductList from '../../../common/features/Cart/CartProductList'
 import CartProductListItemExtended from '../../../common/features/Cart/CartProductListItemExtended';
 
 
-
 const CartPage = ({productsInCart,
 }) => (
     <div className="cart-page">

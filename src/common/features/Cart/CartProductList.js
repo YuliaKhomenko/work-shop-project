@@ -11,10 +11,11 @@ const CartProductList = ({
 <div>
     {keys(productsInCart).map((productId)=>(
         <CartListComponent
-            key={productId}
-            product={productsMap[productId]}
-            count={productsInCart[productId]}
+        key={productId}
+        product={productsMap[productId]}
+        count={productsInCart[productId]}
         />
+        
     ))
     }
 </div>
