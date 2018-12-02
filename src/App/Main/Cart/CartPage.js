@@ -11,7 +11,6 @@ const productsMap = products.reduce((map,product)=>({
 
 const CartPage = ({productsInCart,
 }) => (
-   
     <div className="cart-page">
         <h1>Cart Page</h1>
         {
