@@ -4,10 +4,10 @@ import './CartProductListItemExtended.css'
 
 const CartProductListItemExtended = ({
     product,
-    productCount,
+    count,
     
 }) => (
-    <li>
+    <div>
        
         <div className="cart-product-list-item-description">
             <div className="row">
@@ -22,17 +22,17 @@ const CartProductListItemExtended = ({
                          Price for one item: <span className="bold">$ {product.price} </span> 
                     </p>
                     <p className="cart-extended-count">
-                         Selected quantity: <span className="bold"> {productCount} </span> 
+                         Selected quantity: <span className="bold"> {count} </span> 
                          
                     </p>
                     <p className="cart-extended-sum">
-                         Sum for this item: <span className="bold sum-price">$ {(product.price * productCount)} </span> 
+                         Sum for this item: <span className="bold sum-price">$ {(product.price * count)} </span> 
                     </p>
                   
                 </div>
             </div>
         </div>
-    </li>
+    </div>
 )
 
 export default CartProductListItemExtended
