@@ -5,9 +5,11 @@ import Logo from './Logo/Logo'
 import Menu from './Menu/Menu'
 
 import './header.css'
+import products from '../Main/Products/products';
 
 const Header = ({
 	productsInCart,
+	removeproductsFromCart,
 }) => {
 	return (
 		<header className="header">
