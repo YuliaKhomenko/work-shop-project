@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux'
 
 
-const productLikesReducer = (state={},action) => state
+const productLikesReducer = (state={'1':true,},action) => state
 const store = createStore(productLikesReducer)
 
 ReactDOM.render(

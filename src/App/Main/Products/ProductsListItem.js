@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import './ProductsListItem.css'
 import QuantityInput from '../../../common/features/Quantity/QuantityInput';
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
 
 class ProductsListItem extends Component {
 
@@ -79,4 +80,8 @@ class ProductsListItem extends Component {
 
 
 
-export default ProductsListItem
+export default connect((state)=>{
+    return {
+        likedProducts:state
+    }
+})(ProductsListItem)
