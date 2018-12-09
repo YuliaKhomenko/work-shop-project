@@ -4,9 +4,14 @@ import { BrowserRouter } from 'react-router-dom'
 import {Provider} from 'react-redux'
 import App from './App/App';
 import * as serviceWorker from './serviceWorker';
+import {createStore} from 'redux'
+
+
+const productLikesReducer = (state={},action) => state
+const store = createStore(productLikesReducer)
 
 ReactDOM.render(
-    <Provider>
+    <Provider store={store}>
         <BrowserRouter>
             <App />
        </BrowserRouter>
