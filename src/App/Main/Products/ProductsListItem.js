@@ -7,6 +7,10 @@ import {connect} from 'react-redux'
 
 class ProductsListItem extends Component {
 
+    static defaultProps = {
+        isLiked: false,
+    }
+
     static propTypes = {
         name: PropTypes.string.isRequired,
         description: PropTypes.string,
@@ -56,6 +60,7 @@ class ProductsListItem extends Component {
             capacity,
             image,
             addProductToCart,
+            isLiked
         } = this.props
 
         return (
@@ -63,6 +68,7 @@ class ProductsListItem extends Component {
                 <div className="product-image">
                     <img src={image} alt={name}/>
                 </div>
+                {isLiked ? <button>&#9829;</button> : <button>&#9825;</button>}
                 <div className="product-name">
                     <Link to={`products/${id}`}>{name}</Link></div>
                 <div className="product-description">{description}</div>
