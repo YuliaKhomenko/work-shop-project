@@ -5,9 +5,9 @@ import {Provider} from 'react-redux'
 import App from './App/App';
 import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux'
+import productLikesReducer from './common/features/Like/productlikesreducer'
 
 
-const productLikesReducer = (state={'1':true,},action) => state
 const store = createStore(productLikesReducer)
 
 ReactDOM.render(
