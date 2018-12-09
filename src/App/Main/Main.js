@@ -1,9 +1,10 @@
 import React from 'react'
 import ProductsList from './Products/ProductsList';
-import {Route} from 'react-router-dom'
-import CartPage from './Cart/CartPage'
+import {Route} from 'react-router-dom';
+import CartPage from './Cart/CartPage';
 import PaymentPage from './Payment/PaymentPage'
 import ShippingPage from './Shipping/ShippingPage'
+import ProductsPage from './Products/ProductsPage';
 
 
 const Main = ({
@@ -31,6 +32,7 @@ const Main = ({
 									setProductQuantity={setProductQuantity}/>)}}/>
 					<Route path="/payment" component={PaymentPage}/>
 					<Route path="/shipping" component={ShippingPage}/>
+					<Route path="/products/:productId" component={ProductsPage}/>
 					{/* <ProductsList
 						addProductToCart={addProductToCart}
 					/> */}
